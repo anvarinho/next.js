@@ -35,9 +35,6 @@ async function findFirstAndDelete() {
 export default async function Home() {
   const todos = await getTodos() 
   // findFirstAndDelete();
-  {todos.map(todo =>(
-    console.log(todo.id, todo.complete)
-  ))}
   // await prisma.todo.create({ data: { title: "test", complete: false} })
   return <>
     <header className='flex justify-between items-center mb-4'>
